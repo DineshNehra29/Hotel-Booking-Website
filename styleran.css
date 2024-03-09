@@ -14,7 +14,7 @@
   }
 
   .ms {
-    width: 30%;
+    width: 20%;
     overflow: hidden;
     text-align: center;
     background-color: rgb(233, 232, 231);
@@ -59,7 +59,7 @@
     background-size: cover;
   }
   
-  .rooms {
+  .our-rooms {
     text-align: center;
     margin-top: 15vh;
     margin-bottom: 5vh;
@@ -75,7 +75,7 @@
   .footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
+    padding: 70px 30px 40px 30px;
     color: #2f2f2f;
     background-color: #f3ebeb;
     border-top: 1px solid #e5e5e5;
@@ -226,4 +226,16 @@
   .card {
     width: 80vw;
     left: 10vw;
+  }
+
+  room-pic{
+    overflow: hidden;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .room{
+
+    height: 50vh;
+    width: 100%;
   }
