@@ -15,7 +15,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="owl-carousal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
-  <title>Hotel Room Book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="form.css">
+    <title>Hotel Room Book</title>
 </head>
 
 <body>
@@ -102,13 +106,73 @@
     </button>
   </div>
 
-  <div class="container text-center">
-    <div class="row justify-content-center">
-      <div class="col-4">
-        One of two columns
+  <form id="regForm" action="">
+    <h1>Check Availability:</h1>
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">Booking Duration:
+      <p><input placeholder="Check-in Date..." oninput="this.className = ''" name="Cin"></p>
+      <p><input placeholder="Check-out Date..." oninput="this.className = ''" name="Cout"></p>
+    </div>
+   
+    <div class="tab">Guests:
+      <p><input placeholder="Adults..." oninput="this.className = ''" name="Adults"></p>
+      <p><input placeholder="Children..." oninput="this.className = ''" name="Children"></p>
+      <p><input placeholder="No. of Rooms..." oninput="this.className = ''" name="rooms"></p>
+    </div>
+    <div class="tab">Location Info:
+      <p><input placeholder="State..." oninput="this.className = ''" name="state"></p>
+      <p><input placeholder="City..." oninput="this.className = ''" name="City" ></p>
+    </div>
+    <div class="tab">Contact Info:
+        <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+        <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
       </div>
-      <div class="col-4">
-        One of two columns
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+
+  <div class="container text-center aboutus">
+    <div class="row justify-content-center aboutus-content">
+      <div class="col-6 c1">
+
+      </div>
+      <div class="col-4 c2">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <h5>About Us</h5>
+              <h2>Unwind A Hotel Booking Agency</h2>
+            </div>
+
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <p>The concept and service of the best luxury hotels in India in our sophisticated Urban Double and
+                Unique
+                Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and
+                Unique
+                Junior Loft Suite.</p>
+            </div>
+
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <button><i> Learn More</i> </button>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -122,32 +186,7 @@
 
 
 
-  <div class="m">
 
-    <div class="ms ms1">
-      <p>cgnjjg</p>
-    </div>
-    <div class="ms ms2">
-      <p>gjcbnj</p>
-    </div>
-    <div class="ms ms3">
-      <p>fjbvxxtyi</p>
-    </div>
-  </div>
-
-  <div class="container text-center">
-    <div class="row  justify-content-evenly room">
-      <div class="col-4 ms1 room-pic">
-        One of three columns
-      </div>
-      <div class="col-4 ms2 room-pic">
-        One of three columns
-      </div>
-      <div class="col-4 ms3 room-pic">
-        One of three columns
-      </div>
-    </div>
-  </div>
 
   <div class="slide-container swiper">
     <div class="slide-content">
@@ -318,29 +357,139 @@
     </div>
   </div> -->
 
-  <div class="rooms">
+  <div class="our-services">
     <h1>SERVICES</h1>
   </div>
 
-  <div class="m">
 
-    <div class="ms mk1">
-      <p>Pool</p>
-    </div>
-    <div class="ms mk2">
-      <p>Fitness</p>
-    </div>
-    <div class="ms mk3">
-      <p>Parking</p>
+
+  <div class="container text-center services">
+    <div class="row justify-content-center">
+      <div class="col-2 s1">
+        <div class="icon">
+          <i class="fa-solid fa-wifi fa-2xl"></i>
+          <h2 class="icon-text">Free WiFi</h2>
+        </div>
+
+      </div>
+      <div class="col-2 s1">
+        <div class="icon">
+          <i class="fa-solid fa-utensils fa-2xl"></i>
+          <h2 class="icon-text">Restaurant</h2>
+        </div>
+      </div>
+      <div class="col-2 s1">
+        <div class="icon">
+          <i class="fa-solid fa-water-ladder fa-2xl"></i>
+          <h2 class="icon-text">Swimming pool</h2>
+        </div>
+      </div>
+      <div class="col-2 s1">
+        <div class="icon">
+          <i class="fa-solid fa-dumbbell fa-2xl"></i>
+          <h2 class="icon-text">Gym</h2>
+        </div>
+      </div>
+      <div class="col-2 s1">
+        <div class="icon">
+          <i class="fa-solid fa-square-parking fa-2xl"></i>
+          <h2 class="icon-text">Parking</h2>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div>
-    <div>
 
+  <div class="container text-center special">
+    <div class="row justify-content-start">
+      <div class="col-6 c1">
+
+      </div>
+      <div class="col-4 c2">
+        <h2>Luxury &amp; Comfort Our services and wonders of Prague</h2>
+        <p>The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and
+          Unique
+          Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and
+          Unique
+          Junior Loft Suite.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="slide-container swiper">
+    <div class="slide-content as">
+        <div class="card-wrapper swiper-wrapper">
+            <div class=" swiper-slide bubble-card">
+                <div class="bubble">
+                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
+                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
+                        that unarmed truth and unconditional love will have the final word.
+                    </blockquote>
+                    <div></div>
+                    <cite> Martin Luther King, Jr.</cite>
+                </div>
+            </div>
+            <div class=" swiper-slide bubble-card">
+                <div class="bubble">
+                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
+                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
+                        that unarmed truth and unconditional love will have the final word.
+                    </blockquote>
+                    <div></div>
+                    <cite> Martin Luther King, Jr.</cite>
+                </div>
+            </div>
+            <div class=" swiper-slide bubble-card">
+                <div class="bubble">
+                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
+                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
+                        that unarmed truth and unconditional love will have the final word.
+                    </blockquote>
+                    <div></div>
+                    <cite> Martin Luther King, Jr.</cite>
+                </div>
+            </div>
+            <div class=" swiper-slide bubble-card">
+                <div class="bubble">
+                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
+                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
+                        that unarmed truth and unconditional love will have the final word.
+                    </blockquote>
+                    <div></div>
+                    <cite> Martin Luther King, Jr.</cite>
+                </div>
+            </div>
+            <div class=" swiper-slide bubble-card">
+                <div class="bubble">
+                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
+                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
+                        that unarmed truth and unconditional love will have the final word.
+                    </blockquote>
+                    <div></div>
+                    <cite> Martin Luther King, Jr.</cite>
+                </div>
+            </div>
+            <div class=" swiper-slide bubble-card">
+                <div class="bubble">
+                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
+                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
+                        that unarmed truth and unconditional love will have the final word.
+                    </blockquote>
+                    <div></div>
+                    <cite> Martin Luther King, Jr.</cite>
+                </div>
+            </div>
+           
+        </div>
     </div>
 
-  </div>
+    <div class="swiper-button-next swiper-navBtn guest"></div>
+    <div class="swiper-button-prev swiper-navBtn guest"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
 
   <footer class="footer">
     <div class="footer__addr">
@@ -444,6 +593,8 @@
   <!--Uncomment this line-->
   <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
   <script src="owl-carousal.js"></script>
+  <script src="reviw.js"></script>
+  <script src="form.js"></script>
 </body>
 
 </html>
