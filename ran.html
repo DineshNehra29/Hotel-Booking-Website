@@ -19,11 +19,11 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="form.css">
-    <title>Hotel Room Book</title>
+  <title>Hotel Room Book</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -33,9 +33,10 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Rooms</a>
+          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#">About </a>
+
         </div>
       </div>
     </div>
@@ -58,13 +59,9 @@
           src="https://images.pexels.com/photos/863802/pexels-photo-863802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <div class="buttons">
-            <button class="book_button">
-              <i> BOOK NOW</i>
-            </button>
-          </div>
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+         
+          <h5>ENJOY YOUR WONDERFUL HOLIDAYS WITH A GREAT LUXURY EXPERIENCE!</h5>
+          <p>Most Relaxing Place</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -113,7 +110,7 @@
       <p><input placeholder="Check-in Date..." oninput="this.className = ''" name="Cin"></p>
       <p><input placeholder="Check-out Date..." oninput="this.className = ''" name="Cout"></p>
     </div>
-   
+
     <div class="tab">Guests:
       <p><input placeholder="Adults..." oninput="this.className = ''" name="Adults"></p>
       <p><input placeholder="Children..." oninput="this.className = ''" name="Children"></p>
@@ -121,12 +118,12 @@
     </div>
     <div class="tab">Location Info:
       <p><input placeholder="State..." oninput="this.className = ''" name="state"></p>
-      <p><input placeholder="City..." oninput="this.className = ''" name="City" ></p>
+      <p><input placeholder="City..." oninput="this.className = ''" name="City"></p>
     </div>
     <div class="tab">Contact Info:
-        <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-        <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-      </div>
+      <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+      <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+    </div>
     <div style="overflow:auto;">
       <div style="float:right;">
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -180,7 +177,7 @@
 
 
 
-  <div class="our-rooms">
+  <div class="our-rooms a1">
     <h1>OUR ROOMS</h1>
   </div>
 
@@ -188,7 +185,7 @@
 
 
 
-  <div class="slide-container swiper">
+  <div class="slide-container swiper room-card">
     <div class="slide-content">
       <div class="card-wrapper swiper-wrapper">
         <div class="card swiper-slide">
@@ -199,10 +196,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">Family Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+            <p class="description">2 Adults 1 Children</p>
+            <p>starting from : <span> $200</span></p>
 
             <button class="button">View More</button>
           </div>
@@ -215,10 +212,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">luxury Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+            <p class="description">2 Adults</p>
+            <p>starting from : <span> $300</span></p>
 
             <button class="button">View More</button>
           </div>
@@ -231,10 +228,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">Couple Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+            <p class="description">2 Adults</p>
+            <p>starting from : <span> $400</span></p>
 
             <button class="button">View More</button>
           </div>
@@ -247,11 +244,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">Family Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
+            <p class="description">2 Adults 1 Children</p>
+            <p>starting from : <span> $200</span></p>
             <button class="button">View More</button>
           </div>
         </div>
@@ -263,10 +259,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">luxury Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+            <p class="description">2 Adults</p>
+            <p>starting from : <span> $300</span></p>
 
             <button class="button">View More</button>
           </div>
@@ -279,10 +275,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">Couple Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+            <p class="description">2 Adults</p>
+            <p>starting from : <span> $400</span></p>
 
             <button class="button">View More</button>
           </div>
@@ -295,11 +291,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">Family Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
+            <p class="description">2 Adults 1 Children</p>
+            <p>starting from : <span> $200</span></p>
             <button class="button">View More</button>
           </div>
         </div>
@@ -311,10 +306,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">luxury Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+            <p class="description">2 Adults</p>
+            <p>starting from : <span> $300</span></p>
 
             <button class="button">View More</button>
           </div>
@@ -327,10 +322,10 @@
           </div>
 
           <div class="card-content">
-            <h2 class="name">Mohamed Yousef
+            <h2 class="name">Couple Room
             </h2>
-            <p class="description">The lorem text the section that contains header with having open
-              functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+            <p class="description">2 Adults</p>
+            <p>starting from : <span> $400</span></p>
 
             <button class="button">View More</button>
           </div>
@@ -343,21 +338,9 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <!-- <div class="card text-center">
-    <div class="card-header">
-      Featured
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    <div class="card-footer text-body-secondary">
-      2 days ago
-    </div>
-  </div> -->
 
-  <div class="our-services">
+
+  <div class="our-services a1">
     <h1>SERVICES</h1>
   </div>
 
@@ -400,94 +383,107 @@
   </div>
 
 
-  <div class="container text-center special">
-    <div class="row justify-content-start">
+  <div class="container text-center Special">
+    <div class="row justify-content-center aboutus-content">
       <div class="col-6 c1">
 
       </div>
       <div class="col-4 c2">
-        <h2>Luxury &amp; Comfort Our services and wonders of Prague</h2>
-        <p>The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and
-          Unique
-          Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and
-          Unique
-          Junior Loft Suite.</p>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+
+              <h2>Special Offers! </h2>
+            </div>
+
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <p>The concept and service of the best luxury hotels in India in our sophisticated Urban Double and
+                Unique
+                Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and
+                Unique
+                Junior Loft Suite.</p>
+            </div>
+
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <button><i> Avail Now</i> </button>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
 
 
+  <div class="happy-guests a1">
+    <h1>Happy Guests</h1>
+  </div>
+
+
   <div class="slide-container swiper">
     <div class="slide-content as">
-        <div class="card-wrapper swiper-wrapper">
-            <div class=" swiper-slide bubble-card">
-                <div class="bubble">
-                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
-                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
-                        that unarmed truth and unconditional love will have the final word.
-                    </blockquote>
-                    <div></div>
-                    <cite> Martin Luther King, Jr.</cite>
-                </div>
-            </div>
-            <div class=" swiper-slide bubble-card">
-                <div class="bubble">
-                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
-                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
-                        that unarmed truth and unconditional love will have the final word.
-                    </blockquote>
-                    <div></div>
-                    <cite> Martin Luther King, Jr.</cite>
-                </div>
-            </div>
-            <div class=" swiper-slide bubble-card">
-                <div class="bubble">
-                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
-                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
-                        that unarmed truth and unconditional love will have the final word.
-                    </blockquote>
-                    <div></div>
-                    <cite> Martin Luther King, Jr.</cite>
-                </div>
-            </div>
-            <div class=" swiper-slide bubble-card">
-                <div class="bubble">
-                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
-                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
-                        that unarmed truth and unconditional love will have the final word.
-                    </blockquote>
-                    <div></div>
-                    <cite> Martin Luther King, Jr.</cite>
-                </div>
-            </div>
-            <div class=" swiper-slide bubble-card">
-                <div class="bubble">
-                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
-                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
-                        that unarmed truth and unconditional love will have the final word.
-                    </blockquote>
-                    <div></div>
-                    <cite> Martin Luther King, Jr.</cite>
-                </div>
-            </div>
-            <div class=" swiper-slide bubble-card">
-                <div class="bubble">
-                    <blockquote>I refuse to accept the view that mankind is so tragically bound to the starless midnight of
-                        racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe
-                        that unarmed truth and unconditional love will have the final word.
-                    </blockquote>
-                    <div></div>
-                    <cite> Martin Luther King, Jr.</cite>
-                </div>
-            </div>
-           
+      <div class="card-wrapper swiper-wrapper">
+        <div class=" swiper-slide bubble-card">
+          <div class="bubble">
+            <blockquote>The staff at this hotel were so friendly and helpful. They made our stay so enjoyable and
+              comfortable
+            </blockquote>
+            <div></div>
+            <cite> Saitama</cite>
+          </div>
         </div>
+        <div class=" swiper-slide bubble-card">
+          <div class="bubble">
+            <blockquote>The rooms were spacious, clean and well-maintained
+            </blockquote>
+            <div></div>
+            <cite> Eren the Rumbler</cite>
+          </div>
+        </div>
+        <div class=" swiper-slide bubble-card">
+          <div class="bubble">
+            <blockquote>The location was perfect - close to the city centre and attractions
+            </blockquote>
+            <div></div>
+            <cite> Monkey D luffy</cite>
+          </div>
+        </div>
+        <div class=" swiper-slide bubble-card">
+          <div class="bubble">
+            <blockquote>The breakfast was delicious and had a great variety of options
+            </blockquote>
+            <div></div>
+            <cite> Sukuna</cite>
+          </div>
+        </div>
+        <div class=" swiper-slide bubble-card">
+          <div class="bubble">
+            <blockquote>The staff were attentive and went out of their way to ensure that we were comfortable
+            </blockquote>
+            <div></div>
+            <cite> Jack the Papa</cite>
+          </div>
+        </div>
+        <div class=" swiper-slide bubble-card">
+          <div class="bubble">
+            <blockquote>It was clean, stylish, roomy with excellent service in where we had dinner
+            </blockquote>
+            <div></div>
+            <cite> Friren the Elf</cite>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div class="swiper-button-next swiper-navBtn guest"></div>
     <div class="swiper-button-prev swiper-navBtn guest"></div>
     <div class="swiper-pagination"></div>
-</div>
+  </div>
 
 
 
