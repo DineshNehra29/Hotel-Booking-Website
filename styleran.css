@@ -440,6 +440,7 @@ p {
 
 .w-100 {
   filter: brightness(80%);
+  
 }
 
 
@@ -452,11 +453,12 @@ p {
   position: absolute !important;
   border-bottom: 1px solid white;
   height: 7vh;
-  color: white;
+  
 }
 
 .nav-link {
   margin-left: 2%;
+  color: white;
 }
 
 .carousel-caption {
